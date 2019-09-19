@@ -1,0 +1,120 @@
+html,
+body {
+    height: 100%;
+}
+
+h1{
+}
+
+h2 {
+    margin: 15px 0 10px 0;
+}
+
+/*---------------------------------------------*/
+/* none underline for links */
+a:hover {
+    text-decoration: none;
+}
+
+/*---------------------------------------------*/
+/* preloader */
+.loader {
+background: none repeat scroll 0 0 #ffffff;
+bottom: 0;
+height: 100%;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+width: 100%;
+z-index: 9999;
+}
+
+.loader_inner {
+background-image: url("/preloader.gif");
+background-size: cover;
+margin-top: -40px;
+margin-left: -40px;
+background-repeat: no-repeat;
+background-position: center center;
+background-color: #fff;
+height: 100px;
+width: 100px;
+left: 50%;
+top: 50%;
+position: absolute;
+}
+
+/*---------------------------------------------*/
+/* standart container ceter desctop */
+.container-weight {
+    max-width: 920px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+/*---------------------------------------------*/
+/* large input for forms*/
+form.form-horizontal{
+    margin: 15px 0 15px 0;
+}
+
+/*---------------------------------------------*/
+/* large input for forms*/
+textarea.input-xxlarge{
+    height: 200px;
+}
+
+form input{
+    margin: 5px 0 5px 0;
+}
+
+/*---------------------------------------------*/
+/* navigation at the site*/
+ul.nav{
+    position: relative;
+    float: right;
+}
+
+
+/*---------------------------------------------*/
+/* for posts at posts page*/
+div.all_post,
+div.one_post,
+div.form_post{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.post{
+    clear:both;
+    max-width: 620px;
+    font-size:16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 0 15px 0;
+}
+div.btn-group{
+    display: inline-block;
+}
+
+span.date{
+    margin-bottom: 15px;
+}
+
+/*---------------------------------------------*/
+/* text comments at the post page */
+p.comment{
+    color: #000;
+    -ms-text-align-last: left;
+    text-align-last: left;
+}
+
+/*---------------------------------------------*/
+/* footer */
+.main_footer {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
