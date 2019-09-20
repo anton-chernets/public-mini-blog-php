@@ -2,8 +2,9 @@
 
 $title = 'Mini blog';
 
+use \helpers\StringHelper;
+
 /**
- * @param  array $popular
  * @param  array $publications
  */
 ?>
@@ -19,7 +20,7 @@ $title = 'Mini blog';
             <div class="all_post">
                 <? foreach ($publications as $item): ?>
                     <h2><a href="/blog/publication/<?=$item[0]?>"><?=$item[3]?></a></h2>
-                    <div class="post"><?=mb_substr($item[4], 0, 100).''?><a href="/blog/publication/<?=$item[0]?>"> [...]</a></div>
+                    <div class="post"><?=StringHelper::pruningString($item[4], 100).''?><a href="/blog/publication/<?=$item[0]?>"> [...]</a></div>
                     <span class="name"><?=$item[1]?></span>
                     <span class="date"><?='&ensp;'.\helpers\DateTimeHelper::getDate($item[2])?></span>
                     <span class="comments">&ensp;Комментарии <span class="badge"><?= \models\Comment::countComments($item[0]) ?></span></span>

@@ -1,11 +1,20 @@
+<?php
+
+use \helpers\StringHelper;
+
+/**
+ * @param  array $popular
+ */
+?>
+
 <div id="wrapper">
     <h2>Популярные посты:</h2>
     <ul id="vertical-ticker">
         <? foreach ($popular as $item): ?>
             <li>
-                <a href="/blog/publication/<?=$item[0]?>"><?=mb_substr($item[3], 0, 20)?></a>
+                <a href="/blog/publication/<?=$item[0]?>"><?=StringHelper::pruningString($item[3], 20)?></a>
                 <br>
-                <span class="post"><?=mb_substr($item[4], 0, 50)."..."?></span>
+                <span class="post"><?=StringHelper::pruningString($item[4], 50)."..."?></span>
             </li>
         <? endforeach ?>
     </ul>

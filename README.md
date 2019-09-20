@@ -18,4 +18,4 @@ localhost
 
 Доступные url:
 domen_name/
-domen_name/blog/publication?id=1
+domen_name/blog/publication/54
