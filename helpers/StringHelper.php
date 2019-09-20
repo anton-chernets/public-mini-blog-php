@@ -6,7 +6,7 @@ namespace helpers;
 class StringHelper
 {
     /**
-     * Человекопонятная дата из timestamp
+     * Обрезка строк с первого символа и по заданный
      *
      * @param $string string
      * @param $countSymbols string
